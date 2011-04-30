@@ -28,7 +28,7 @@ import com.google.android.maps.MyLocationOverlay;
 import com.google.android.maps.Overlay;
 import com.google.android.maps.OverlayItem;
 
-public class MapsActivity extends MapActivity {
+public class GuidedTour extends MapActivity {
 	private MapView mapView;
 	private List<Overlay> mapOverlays;
 	private MapController controller;
