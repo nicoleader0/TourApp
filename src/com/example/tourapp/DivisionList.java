@@ -36,7 +36,7 @@ public class DivisionList<listOfDivisionObjects> extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.divisionlist);
-		database = new Database(this, "workingdatabase.txt", "workingdatabase.db");
+		database = new Database(this, "division.txt", "division.db");
 		final Cursor cursor = getDivisions();
 		listOfDivisionObjects = new ArrayList<DivisionObject>(MAX_NUM_DIVISIONOBJECTS);
 

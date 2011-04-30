@@ -57,6 +57,7 @@ public class GuidedTour extends MapActivity {
 		mapOverlays = mapView.getOverlays();
 		// create itemized overlay
 		drawable = getResources().getDrawable(R.drawable.marker);
+		drawable.setAlpha(200);
 		itemizedOverlay = new MyItemizedOverlay(drawable, mapView);
 		//Create balloon overlays using test arraylist
 		for (DivisionObject obj:manualListOfDivisionObjects){
@@ -65,6 +66,7 @@ public class GuidedTour extends MapActivity {
 			createOverlay(lat, lon, obj.getName(), obj.getDirFromPrev());
 		}
 		mapOverlays.add(itemizedOverlay);
+		
 	}
 	
 	/** Find and initialize the map view. (From Hello Android tutorial)*/
